@@ -1,77 +1,159 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: 'CaviarDreams', sans-serif;
+}
+/* For modern browsers */
+.clearfix:before,
+.clearfix:after {
+  display: table;
+
+  content: '';
+}
+.clearfix:after {
+  clear: both;
+}
+/* для IE6-7 */
+.clearfix {
+  zoom: 1;
 }
 .page {
   width: 984px;
   margin: 0 auto;
-  
 }
+/* ===== START HEDER ===== */
 .header {
-  
+  width: 100%;
+  padding: 27px 0 21px;
+
+  border-bottom: 1px solid #cfcfcf;
 }
 .header__logo {
-  
+  float: left;
+
+  width: 40%;
 }
 .logo {
-  
 }
 .logo__link {
-  
 }
 .logo__img {
-  
+}
+.logo__slogan {
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+
+  margin: 7px 0 0 8px;
+
+  color: #9288a7;
 }
 .header__contact-short {
-  
+  float: left;
+
+  width: 24%;
+  margin: 13px 0 0;
 }
 .contact-short {
-  
 }
 .contact-short__title {
-  
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #dcdce6;
 }
 .contact-short__description {
-  
+  font-size: 16px;
+  font-weight: 700;
+
+  margin: 6px 0 0;
+
+  color: #2e304b;
 }
 .contact-short__phone {
-  
 }
 .contact-short__email {
-  
 }
 .header__form {
-  
+  float: left;
+
+  margin: 19px 0 0;
+  width: 27%;
 }
 .form {
-  
 }
 .form__inputs {
-  
+  float: left;
+
+  width: 145px;
 }
 .input {
-  
+  font-size: 14px;
+  font-weight: 400;
+
+  display: block;
+
+  width: 100%;
+  height: 26px;
+  margin: 0 0 5px;
+  padding: 3px 8px;
+
+  color: #000;
+  border: 1px solid #eeeef2;
+  background-color: #f6f6f8;
+}
+.input:focus {
+  outline: none;
 }
 .form__control {
-  
+  float: left;
+
+  padding: 0 0 0 6px;
 }
 .button {
-  
+  font-size: 15px;
+
+  display: block;
+
+  padding: 5px 11px;
+
+  color: #fff;
+  border: 0;
+  background: #8d87a3;
 }
 .link {
-  
+  font-size: 14px;
+  font-weight: 700;
+
+  display: block;
+
+  margin: 7px 0 0;
+
+  text-decoration: underline;
 }
 .link_color_purple {
-  
+  color: #8d87a3;
 }
 .header__about {
-  
+  float: left;
+  margin: 13px 0 0;
+  width: 9%;
+  text-align: center;
 }
 .about {
-  
+  display: block;
 }
 .about__icon {
-  
+  background: url(../img/icon-planet.png) no-repeat;
+  width: 36px;
+  height: 36px;
+  margin: 0 auto 4px;
 }
 .about__title {
-  
+  color: #f38b00;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
 }
+/* ===== END HEDER ===== */
