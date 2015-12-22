@@ -19,8 +19,13 @@ body {
   zoom: 1;
 }
 .page {
-  width: 984px;
+  max-width: 984px;
   margin: 0 auto;
+}
+@media (max-width: 984px) {
+  .page {
+    padding: 0 20px;
+  }
 }
 /* ===== START HEDER ===== */
 .header {
@@ -39,6 +44,8 @@ body {
 .logo__link {
 }
 .logo__img {
+  max-width: 100%;
+  height: auto;
 }
 .logo__slogan {
   font-family: Arial, sans-serif;
@@ -78,15 +85,15 @@ body {
 .header__form {
   float: left;
 
-  margin: 19px 0 0;
   width: 27%;
+  margin: 19px 0 0;
 }
 .form {
 }
 .form__inputs {
   float: left;
 
-  width: 145px;
+  width: 60%;
 }
 .input {
   font-size: 14px;
@@ -110,6 +117,7 @@ body {
   float: left;
 
   padding: 0 0 0 6px;
+  width: 40%;
 }
 .button {
   font-size: 15px;
@@ -118,9 +126,20 @@ body {
 
   padding: 5px 11px;
 
-  color: #fff;
   border: 0;
+}
+.button:focus {
+  outline: none;
+}
+.button_sign {
+  color: #fff;
   background: #8d87a3;
+}
+.button_sign:hover,
+.button_sign:active {
+  border-right: 2px solid #8d87a3;
+  outline: none;
+  background: #80779e;
 }
 .link {
   font-size: 14px;
@@ -137,23 +156,68 @@ body {
 }
 .header__about {
   float: left;
-  margin: 13px 0 0;
+
   width: 9%;
+  margin: 13px 0 0;
+
   text-align: center;
 }
 .about {
   display: block;
 }
 .about__icon {
-  background: url(../img/icon-planet.png) no-repeat;
   width: 36px;
   height: 36px;
   margin: 0 auto 4px;
+
+  background: url(../img/icon-planet.png) no-repeat;
 }
 .about__title {
-  color: #f38b00;
   font-size: 14px;
   font-weight: 700;
+
   text-decoration: underline;
+
+  color: #f38b00;
 }
+
+/*start header screen*/
+@media (max-width: 984px) {
+  .header__logo {
+    width: 35%;
+  }
+  .header__contact-short {
+    width: 25%;
+  }
+  .contact-short__description {
+    font-size: 14px;
+  }
+  .header__form {
+    width: 25%;
+  }
+  .header__about {
+    width: 15%;
+  }
+  .about__title {
+    font-size: 12px;
+  }
+}
+/*end header screen*/
+
+/* start header tablet*/
+@media (max-width: 768px) {
+  .header__logo {
+    width: 50%;
+  }
+  .header__contact-short {
+    display: none;
+  }
+  .header__form {
+    width: 35%;
+  }
+  .header__about {
+    width: 15%;
+  }
+}
+/* end header tablet*/
 /* ===== END HEDER ===== */
