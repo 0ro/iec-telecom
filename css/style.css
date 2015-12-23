@@ -181,10 +181,13 @@ body {
   color: #f38b00;
 }
 
-/*start header screen*/
+/*start header desctop > tablet*/
 @media (max-width: 984px) {
   .header__logo {
     width: 35%;
+  }
+  .logo__slogan {
+    font-size: 14px;
   }
   .header__contact-short {
     width: 25%;
@@ -202,12 +205,15 @@ body {
     font-size: 12px;
   }
 }
-/*end header screen*/
+/*end header desctop > tablet*/
 
 /* start header tablet*/
 @media (max-width: 768px) {
   .header__logo {
     width: 50%;
+  }
+  .logo__slogan {
+    font-size: 17px;
   }
   .header__contact-short {
     display: none;
@@ -249,8 +255,8 @@ body {
 
   float: left;
 
-  margin: 0 30px 0 0;
   height: 40px;
+  margin: 0 4% 0 0;
 }
 .menu__link {
   font-size: 16px;
@@ -263,15 +269,16 @@ body {
 }
 .dropdown-menu {
   position: absolute;
-  cursor: pointer;
   top: 38px;
 
   display: none;
 
   width: 642px;
+  padding: 21px 23px;
+
+  cursor: pointer;
 
   background-color: #dcdce6;
-  padding: 21px 23px;
 }
 .dropdown-menu:before {
   position: absolute;
@@ -290,8 +297,9 @@ body {
   float: left;
 
   width: 50%;
-  border-right: 1px solid #c8c8d4;
   padding: 0 21px 0 0;
+
+  border-right: 1px solid #c8c8d4;
 }
 .dropdown-menu__slogan {
   font-size: 16px;
@@ -307,7 +315,8 @@ body {
 
   list-style: none;
 }
-.dropdown-menu__item {;
+.dropdown-menu__item {
+  ;
 }
 .dropdown-menu__item:before,
 .dropdown-menu__item:after {
@@ -323,24 +332,31 @@ body {
   font-weight: 700;
   line-height: 15px;
 
+  display: table-row;
+
+  height: 71px;
+
+  vertical-align: middle;
   text-decoration: none;
 
-  color: #2e304b;
-  display: table-row;
-  vertical-align: middle;
-  height: 71px;;
+  color: #2e304b;;
 }
 .dropdown-menu__img {
   display: table-cell;
+
   margin: 0 20px 0 0;
+
   text-align: center;
   vertical-align: middle;
 }
 .dropdown-menu__title {
-  display: table-cell;
   line-height: 15px;
-  vertical-align: middle;
+
+  display: table-cell;
+
   padding: 0 0 0 24px;
+
+  vertical-align: middle;
 }
 .dropdown-menu__right {
   float: left;
@@ -393,4 +409,28 @@ body {
 
   background: url(../img/icon-search.png) no-repeat;
 }
+/*start nav desctop > tablet*/
+@media (max-width: 984px) {
+  .menu__item {
+    margin: 0 2% 0 0;
+  }
+  .nav__menu {
+    width: 75%;
+  }
+  .nav__search {
+    width: 25%;
+  }
+}
+/*end nav desctop > tablet*/
+
+/*start nav tablet*/
+@media (max-width: 768px) {
+  .nav__menu {
+    width: 77%;
+  }
+  .nav__search {
+    width: 23%;
+  }
+}
+/*end nav tablet*/
 /* ========================= END NAV ========================= */

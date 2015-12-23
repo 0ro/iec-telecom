@@ -24,4 +24,4 @@ gulp.task('watch', function () {
   gulp.watch('*.html', ['html']);
 });
 
-gulp.task('default', ['connect', 'html', 'watch']);
+gulp.task('default', ['connect', 'html', 'css', 'watch']);
