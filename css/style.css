@@ -431,6 +431,9 @@ body {
   .nav__search {
     width: 23%;
   }
+  .dropdown-menu {
+    width: 728px;
+  }
 }
 /*end nav tablet*/
 /* ========================= END NAV ========================= */
