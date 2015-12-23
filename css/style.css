@@ -319,7 +319,6 @@ body {
   cursor: pointer;
 }
 .nav__toggle-icon {
-  display: block;
 
   box-sizing: content-box;
   width: 36px;
@@ -328,6 +327,7 @@ body {
 
   border-bottom: 3px solid #dcdce6;
   background-color: #2e304b;
+  float: right;
 }
 .nav__menu {
   float: left;
@@ -367,7 +367,7 @@ body {
   display: none;
 
   width: 642px;
-  padding: 21px 23px;
+  padding: 21px;
 
   cursor: pointer;
 
@@ -536,6 +536,8 @@ body {
   }
   .nav__toggle {
     display: block;
+    float: right;
+    text-align: right;
   }
   .nav__menu {
     position: absolute;
@@ -551,7 +553,7 @@ body {
   .nav__menu:before {
     position: absolute;
     top: -26px;
-    right: 19px;
+    right: 6px;
 
     content: '';
 
@@ -569,8 +571,29 @@ body {
   .nav__search {
     width: 100%;
   }
-  .menu__item:hover .dropdown-menu {
-    display: none;
+  .dropdown-menu {
+    width: 313px;
+    right: 152px;
+    border-right: 1px solid #c8c8d4;
+    top: -22px;
+    text-align: left;
+    
+  }
+  .dropdown-menu__left {
+    float: none;
+    border: 0;
+    width: 100%;
+    padding: 0;
+  }
+  .dropdown-menu__right {
+    float: none;
+    width: 100%;
+    padding: 0;
+    margin: 10px 0 0;
+  }
+  .dropdown-menu:before {
+    content: '';
+    border: 0;
   }
   .menu__item_about {
     display: block;
