@@ -319,6 +319,7 @@ body {
   cursor: pointer;
 }
 .nav__toggle-icon {
+  float: right;
 
   box-sizing: content-box;
   width: 36px;
@@ -327,7 +328,6 @@ body {
 
   border-bottom: 3px solid #dcdce6;
   background-color: #2e304b;
-  float: right;
 }
 .nav__menu {
   float: left;
@@ -537,6 +537,7 @@ body {
   .nav__toggle {
     display: block;
     float: right;
+
     text-align: right;
   }
   .nav__menu {
@@ -561,9 +562,11 @@ body {
     border-bottom: 13px solid #dcdce6;
   }
   .menu {
-    background: #dcdce6;
-    text-align: right;
     padding: 22px;
+
+    text-align: right;
+
+    background: #dcdce6;
   }
   .menu__item {
     float: none;
@@ -572,27 +575,33 @@ body {
     width: 100%;
   }
   .dropdown-menu {
-    width: 313px;
-    right: 152px;
-    border-right: 1px solid #c8c8d4;
     top: -22px;
+    right: 152px;
+
+    width: 313px;
+
     text-align: left;
-    
+
+    border-right: 1px solid #c8c8d4;
   }
   .dropdown-menu__left {
     float: none;
-    border: 0;
+
     width: 100%;
     padding: 0;
+
+    border: 0;
   }
   .dropdown-menu__right {
     float: none;
+
     width: 100%;
-    padding: 0;
     margin: 10px 0 0;
+    padding: 0;
   }
   .dropdown-menu:before {
     content: '';
+
     border: 0;
   }
   .menu__item_about {
