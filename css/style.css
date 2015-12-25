@@ -323,22 +323,23 @@ input {
 /* end header phone 480*/
 
 /* start header phone 320*/
-@media (max-width: 479px){
+@media (max-width: 479px) {
   .header {
-    border: 0;
     margin: 0 0 -53px;
+
+    border: 0;
   }
   .header__about {
     display: none;
   }
   .header__form {
     float: left;
-    margin: 30px 0 0 67%;
+
     width: 34px;
+    margin: 30px 0 0 67%;
   }
   .header__form .form {
     right: -14px;
-    
   }
   .header__logo {
     width: 100%;
@@ -409,6 +410,7 @@ input {
 }
 .dropdown-menu {
   position: absolute;
+  z-index: 1;
   top: 38px;
 
   display: none;
@@ -419,7 +421,6 @@ input {
   cursor: pointer;
 
   background-color: #dcdce6;
-  z-index: 1;
 }
 .dropdown-menu:before {
   position: absolute;
@@ -624,6 +625,7 @@ input {
     border-bottom: 13px solid #dcdce6;
   }
   .menu {
+    margin: 0 -20px 0 0;
     padding: 22px;
 
     text-align: right;
@@ -676,26 +678,29 @@ input {
 /* end nav phone 480*/
 
 /* start nav phone 320*/
-@media (max-width: 479px){
+@media (max-width: 479px) {
   .nav {
-    width: 60%;
     float: left;
+
+    width: 60%;
   }
   .nav__menu {
-    display: none;
     top: 200px;
+
+    display: none;
   }
   .nav__search {
-    width: 100%;
     float: left;
+
+    width: 100%;
   }
   .nav__toggle {
     margin: 32px 0 0;;
   }
   .dropdown-menu {
     right: 37px;
+
     width: 326px;
-    
   }
 }
 /* end nav phone 320*/
