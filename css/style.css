@@ -259,7 +259,7 @@ input {
 /* end header tablet*/
 
 /* start header phone 480*/
-@media (min-width: 480px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .header {
     border: 0;
   }
@@ -321,6 +321,33 @@ input {
   }
 }
 /* end header phone 480*/
+
+/* start header phone 320*/
+@media (max-width: 479px){
+  .header {
+    border: 0;
+    margin: 0 0 -53px;
+  }
+  .header__about {
+    display: none;
+  }
+  .header__form {
+    float: left;
+    margin: 30px 0 0 67%;
+    width: 34px;
+  }
+  .header__form .form {
+    right: -14px;
+    
+  }
+  .header__logo {
+    width: 100%;
+  }
+  .logo__slogan {
+    font-size: 15px;
+  }
+}
+/* end header phone 320*/
 /* ========================= END HEDER ========================= */
 
 /* ========================= START NAV ========================= */
@@ -392,6 +419,7 @@ input {
   cursor: pointer;
 
   background-color: #dcdce6;
+  z-index: 1;
 }
 .dropdown-menu:before {
   position: absolute;
@@ -563,8 +591,8 @@ input {
 }
 /*end nav tablet*/
 
-/* start header phone 480*/
-@media (min-width: 480px) and (max-width: 767px) {
+/* start nav phone 480*/
+@media (max-width: 767px) {
   .nav {
     padding: 0 0 28px;
   }
@@ -645,5 +673,30 @@ input {
     color: #f38b00;
   }
 }
-/* end header phone 480*/
+/* end nav phone 480*/
+
+/* start nav phone 320*/
+@media (max-width: 479px){
+  .nav {
+    width: 60%;
+    float: left;
+  }
+  .nav__menu {
+    display: none;
+    top: 200px;
+  }
+  .nav__search {
+    width: 100%;
+    float: left;
+  }
+  .nav__toggle {
+    margin: 32px 0 0;;
+  }
+  .dropdown-menu {
+    right: 37px;
+    width: 326px;
+    
+  }
+}
+/* end nav phone 320*/
 /* ========================= END NAV ========================= */
