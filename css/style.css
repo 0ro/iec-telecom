@@ -293,7 +293,7 @@ input {
   .header__form .form {
     position: absolute;
     z-index: 1;
-    top: 62px;
+    top: 63px;
     right: 14px;
 
     width: 273px;
@@ -640,7 +640,7 @@ input {
   }
   .dropdown-menu {
     top: -22px;
-    right: 152px;
+    right: 143px;
 
     width: 313px;
 
