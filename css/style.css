@@ -272,12 +272,6 @@ input {
   .sign {
     display: block;
   }
-  .nav__toggle {
-    display: block;
-
-    width: 9%;
-    margin: 31px 0 0;
-  }
   .header__logo {
     width: 75%;
   }
@@ -588,6 +582,12 @@ input {
   }
   .dropdown-menu {
     width: 728px;
+  }
+  .nav__toggle {
+    display: block;
+
+    width: 36px;
+    margin: 31px 0 0;
   }
 }
 /*end nav tablet*/
