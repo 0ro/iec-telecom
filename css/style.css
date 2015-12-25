@@ -698,9 +698,8 @@ input {
     margin: 32px 0 0;;
   }
   .dropdown-menu {
-    right: 37px;
-
-    width: 326px;
+    right: 26px;
+    width: 265px;
   }
 }
 /* end nav phone 320*/
