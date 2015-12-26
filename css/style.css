@@ -212,34 +212,9 @@ input {
 
   background: url(../img/icon-sign.png) no-repeat;
 }
-/*start header desctop > tablet*/
-@media (max-width: 984px) {
-  .header__logo {
-    width: 35%;
-  }
-  .logo__slogan {
-    font-size: 14px;
-  }
-  .header__contact-short {
-    width: 25%;
-  }
-  .contact-short__description {
-    font-size: 14px;
-  }
-  .header__form {
-    width: 25%;
-  }
-  .header__about {
-    width: 15%;
-  }
-  .about__title {
-    font-size: 12px;
-  }
-}
-/*end header desctop > tablet*/
 
 /* start header tablet*/
-@media (max-width: 768px) {
+@media (max-width: 984px) {
   .header__logo {
     width: 50%;
   }
@@ -558,7 +533,8 @@ input {
 
   background: url(../img/icon-search.png) no-repeat;
 }
-/*start nav desctop > tablet*/
+
+/*start nav tablet*/
 @media (max-width: 984px) {
   .menu__item {
     margin: 0 2% 0 0;
@@ -567,27 +543,13 @@ input {
     width: 75%;
   }
   .nav__search {
-    width: 25%;
+    width: 23%;
   }
-}
-/*end nav desctop > tablet*/
-
-/*start nav tablet*/
-@media (max-width: 768px) {
   .nav__menu {
     width: 77%;
   }
-  .nav__search {
-    width: 23%;
-  }
   .dropdown-menu {
     width: 728px;
-  }
-  .nav__toggle {
-    display: block;
-
-    width: 36px;
-    margin: 31px 0 0;
   }
 }
 /*end nav tablet*/
@@ -600,6 +562,9 @@ input {
   .nav__toggle {
     display: block;
     float: right;
+
+    width: 36px;
+    margin: 31px 0 0;
 
     text-align: right;
   }
@@ -699,8 +664,63 @@ input {
   }
   .dropdown-menu {
     right: 26px;
+
     width: 265px;
   }
 }
 /* end nav phone 320*/
 /* ========================= END NAV ========================= */
+
+/* ========================= START BANNER ========================= */
+.page__banner {
+}
+.banner {
+  position: relative;
+}
+.banner__img {
+  position: absolute;
+  z-index: 0;
+}
+.banner__img img {
+  max-width: 100%;
+  height: auto;
+}
+.banner__content {
+  position: relative;
+
+  padding: 35px 40px;
+}
+.banner__content-slogan {
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 34px;
+
+  margin: 0;
+
+  color: #2e304b;
+}
+.banner__content-text {
+  font-size: 18px;
+  font-weight: 400;
+
+  color: #2e304b;
+}
+.button {
+}
+.banner__content-button {
+  font-size: 18px;
+  font-weight: 400;
+
+  color: #2e304b;
+  border: 1px solid #2e304b;
+  background: none;
+}
+/* start banner phone 480*/
+@media (max-width: 767px) {
+  .banner {
+    display: none;
+  }
+}
+/* end banner phone 480*/
+
+/* ========================= END BANNER ========================= */
