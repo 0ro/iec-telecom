@@ -715,12 +715,20 @@ input {
   border: 1px solid #2e304b;
   background: none;
 }
-/* start banner phone 480*/
+
+/* start banner tablet */
+@media (max-width: 984px) {
+  .page__banner {
+    margin: 0 -20px;
+  }
+}
+/* end banner tablet */
+/* start banner phone 480 */
 @media (max-width: 767px) {
   .banner {
     display: none;
   }
 }
-/* end banner phone 480*/
+/* end banner phone 480 */
 
 /* ========================= END BANNER ========================= */
