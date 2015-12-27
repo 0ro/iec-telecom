@@ -1153,3 +1153,25 @@ input {
 }
 /* end footer phone 320 */
 /* ========================= END FOOTER ========================= */
+
+/* ////////////////////////////////////////////////////////////////
+
+                            PAGE PROFILE
+
+//////////////////////////////////////////////////////////////// */
+.page__banner_profile .banner__img img {
+  height: 100%;
+}
+.page__banner_profile .banner__content {
+  width: 100%;
+  padding: 20px 30px;;
+}
+.page__banner_profile .banner__content-slogan {
+  float: left;
+}
+.page__banner_profile .banner__content-text {
+  display: none;
+}
+.page__banner_profile .banner__content-button {
+  float: right;
+}
