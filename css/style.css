@@ -49,13 +49,19 @@ input {
 }
 .page__content {
   max-width: 984px;
-  margin: 0 auto -164px;
-  padding: 45px 0 164px;
   min-height: 100%;
+  margin: 0 auto -164px;
+  padding: 0 0 164px;
+}
+.page__text {
+  max-width: 984px;
+  margin: 0 auto;
+  padding: 45px 0 0;
 }
 .page__footer {
-  background-color: #f3f3f3;
-  min-height: 164px;;
+  min-height: 164px;
+
+  background-color: #f3f3f3;;
 }
 @media (max-width: 984px) {
   .page {
