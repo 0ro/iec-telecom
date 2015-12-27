@@ -1200,3 +1200,21 @@ input {
   color: #dcdce6;
 }
 /* ========================= END BREADCRUMB ========================= */
+
+/* ========================= START PERSON ========================= */
+.person {
+  
+}
+.person__img {
+  float: left;
+  margin: 0 10px 0 0;
+  
+}
+.person__desc {
+  color: #2e304b;
+  font-weight: 700;
+  font-size: 14px;
+  float: left;;
+  
+}
+/* ========================= END PERSON ========================= */
