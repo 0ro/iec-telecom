@@ -28,6 +28,7 @@ input {
   zoom: 1;
 }
 .page {
+  height: 100%;
 }
 .page__header {
   position: relative;
@@ -48,11 +49,13 @@ input {
 }
 .page__content {
   max-width: 984px;
-  margin: 0 auto;
-  padding: 45px 0;
+  margin: 0 auto -164px;
+  padding: 45px 0 164px;
+  min-height: 100%;
 }
 .page__footer {
   background-color: #f3f3f3;
+  min-height: 164px;;
 }
 @media (max-width: 984px) {
   .page {
