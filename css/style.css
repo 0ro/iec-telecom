@@ -41,6 +41,9 @@ input {
 
   padding: 40px 0 0;
 }
+.page__content {
+  padding: 45px 0;
+}
 @media (max-width: 984px) {
   .page {
     padding: 0 20px;
@@ -49,9 +52,10 @@ input {
     margin: 0 -20px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .page__categories {
     padding: 0;
+    margin: 0 0 -40px;
   }
 }
 /* ========================= START HEDER ========================= */
@@ -939,3 +943,28 @@ input {
 }
 /* end categories phone 480 */
 /* ========================= END CATEGORIES ========================= */
+
+/* ========================= START ARTICLE ========================= */
+.article {
+}
+.article__title {
+  font-size: 16px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  color: #2e304b;
+  border-bottom: 1px solid #cfcfcf;
+  padding: 0 0 20px;
+  margin: 0;
+}
+.article__text {
+}
+.article__text p {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+
+  color: #2e304b;
+}
+/* ========================= END ARTICLE ========================= */
