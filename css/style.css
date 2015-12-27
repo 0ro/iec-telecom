@@ -1159,6 +1159,8 @@ input {
                             PAGE PROFILE
 
 //////////////////////////////////////////////////////////////// */
+
+/* ========================= START BANNER-PROFILE ========================= */
 .page__banner_profile .banner__img img {
   height: 100%;
 }
@@ -1175,3 +1177,26 @@ input {
 .page__banner_profile .banner__content-button {
   float: right;
 }
+/* ========================= END BANNER-PROFILE ========================= */
+
+/* ========================= START BREADCRUMB ========================= */
+.breadcrumb {
+  margin: 0;
+  padding: 20px 0;
+  list-style: none;
+}
+.breadcrumb__item {
+  color: #dcdce6;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  float: left;
+}
+.breadcrumb > li + li:before {
+  padding: 0 5px;
+
+  content: '/\00a0';
+
+  color: #dcdce6;
+}
+/* ========================= END BREADCRUMB ========================= */
