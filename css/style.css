@@ -47,7 +47,7 @@ input {
   margin: 0 auto;
   padding: 40px 0 0;
 }
-.page__content {
+.page__main {
   max-width: 984px;
   min-height: 100%;
   margin: 0 auto -164px;
@@ -62,6 +62,30 @@ input {
   min-height: 164px;
 
   background-color: #f3f3f3;;
+}
+.page__content {
+  position: relative;
+
+  width: 100%;
+  padding: 0 0 90px;
+}
+.page__profile {
+  float: right;
+
+  width: 70%;
+  padding: 0 40px 0 0;
+}
+.page__additionally {
+  position: absolute;
+  bottom: 90px;
+
+  width: 70%;
+  margin: 0 -15px 0;
+}
+.page__advertising {
+  float: right;
+
+  width: 30%;
 }
 @media (max-width: 984px) {
   .page {
@@ -1183,14 +1207,17 @@ input {
 .breadcrumb {
   margin: 0;
   padding: 20px 0;
+
   list-style: none;
 }
 .breadcrumb__item {
-  color: #dcdce6;
   font-size: 14px;
   font-weight: 700;
   line-height: 18px;
+
   float: left;
+
+  color: #dcdce6;
 }
 .breadcrumb > li + li:before {
   padding: 0 5px;
@@ -1203,18 +1230,188 @@ input {
 
 /* ========================= START PERSON ========================= */
 .person {
-  
 }
 .person__img {
   float: left;
+
   margin: 0 10px 0 0;
-  
 }
 .person__desc {
-  color: #2e304b;
-  font-weight: 700;
   font-size: 14px;
-  float: left;;
-  
+  font-weight: 700;
+
+  float: left;
+
+  color: #2e304b;;
 }
 /* ========================= END PERSON ========================= */
+
+/* ========================= START PROFILE ========================= */
+.profile {
+}
+.profile__title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+
+  margin: 0 0 25px;
+  padding: 0 0 25px;
+
+  text-transform: uppercase;
+
+  color: #2e304b;
+  border-bottom: 1px solid #cfcfcf;
+}
+.profile__description {
+}
+.profile__img {
+  float: left;
+
+  margin: 0 23px 0 0;
+}
+.profile__name {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+
+  margin: 0 0 25px;
+
+  text-transform: uppercase;
+
+  color: #2e304b;
+}
+.profile__status {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+
+  text-transform: none;
+
+  color: #8e88a3;
+}
+.profile__contacts {
+  float: left;
+}
+.profile__contacts-item {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+
+  margin: 0 0 6px;
+}
+.profile__contact-label {
+  color: #8e88a3;
+}
+.profile__contact-value {
+  color: #2e304b;
+}
+.profile__note {
+  margin: 20px 0;
+  padding: 15px;
+
+  background-color: #f3f3f3;
+}
+.profile__note-message {
+  font-family: CaviarDreams;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+
+  color: #2e304b;
+}
+.link {
+}
+.link_color_orange {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+
+  display: inline;
+
+  text-decoration: none;
+
+  color: #f38b00;
+  border-bottom: 1px dotted #f38b00;
+}
+.link_color_orange:hover {
+  border: 0;
+}
+.profile__edit .button {
+  font-family: CaviarDreams;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+
+  color: white;
+  background-color: #8e88a3;
+}
+/* ========================= END PROFILE ========================= */
+
+/* ========================= START ADDITIONALLY ========================= */
+.additionally {
+}
+.additionally__title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+
+  margin: 0 15px 25px;
+  padding: 0 0 25px;
+
+  text-transform: uppercase;
+
+  color: #2e304b;
+  border-bottom: 1px solid #cfcfcf;
+}
+.additionally__list {
+}
+.additionally__item {
+  float: left;
+
+  width: 33.3%;
+  padding: 0 15px;
+}
+.additionally__item-img {
+}
+.additionally__item-title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+
+  text-align: center;
+  text-decoration: underline;
+
+  color: #2e304b;
+}
+/* ========================= END ADDITIONALLY ========================= */
+
+/* ========================= START ADVERTISING ========================= */
+.advertising {
+}
+.order {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+
+  height: 70px;
+  margin: 0 0 30px;
+  padding: 0 0 0 76px;
+
+  text-align: left;
+  text-transform: uppercase;
+
+  color: white;
+  border: 0;
+  background-color: #f38b00;
+  background-image: url(../img/order.png);
+  background-repeat: no-repeat;
+  background-position: 19px 10px;
+}
+.advertising__item {
+  margin: 0 0 20px;
+}
+.advertising__item img {
+  max-width: 100%;
+  height: auto;
+}
+/* ========================= END ADVERTISING ========================= */
