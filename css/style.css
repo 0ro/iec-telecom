@@ -70,7 +70,8 @@ input {
 }
 .page__profile {
   width: 100%;
-  padding: 0 0 90px;;
+  min-height: 805px;
+  padding: 0 0 90px;
 }
 .page__additionally {
   position: absolute;
@@ -101,6 +102,7 @@ input {
     padding: 0 0 90px;
   }
   .page__profile {
+    min-height: 0;
     padding: 0 0 45px;
   }
   .page__additionally {
@@ -1526,7 +1528,7 @@ input {
 
   color: white;
   border: 0;
-  background-color: #f38b00;
+  background-color: #b8c600;
   background-image: url(../img/order.png);
   background-repeat: no-repeat;
   background-position: 19px 10px;
