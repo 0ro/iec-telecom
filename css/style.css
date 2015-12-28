@@ -67,13 +67,12 @@ input {
   position: relative;
 
   width: 100%;
-  padding: 0 0 90px;
 }
 .page__profile {
-  float: right;
 
-  width: 70%;
-  padding: 0 40px 0 0;
+  width: 100%;
+
+  padding: 0 0 90px;;
 }
 .page__additionally {
   position: absolute;
@@ -96,6 +95,26 @@ input {
   }
   .page__footer {
     margin: 0 -20px;
+  }
+  .page__content {
+  position: relative;
+
+  width: 100%;
+  padding: 0 0 90px;
+}
+  .page__profile {
+  padding: 0 0 45px;
+
+  }
+  .page__additionally {
+  display: block;
+  position: static;
+  width: 100%;
+
+  }
+  .page__advertising {
+  width: 35%;
+
   }
 }
 @media (max-width: 767px) {
@@ -1211,13 +1230,15 @@ input {
   list-style: none;
 }
 .breadcrumb__item {
+  float: left;
+}
+.breadcrumb__item a {
   font-size: 14px;
   font-weight: 700;
   line-height: 18px;
 
-  float: left;
-
   color: #dcdce6;
+  text-decoration: none;
 }
 .breadcrumb > li + li:before {
   padding: 0 5px;
@@ -1248,6 +1269,9 @@ input {
 
 /* ========================= START PROFILE ========================= */
 .profile {
+  width: 70%;
+  float: right;
+  padding: 0 40px 0 0;
 }
 .profile__title {
   font-size: 15px;
@@ -1268,6 +1292,10 @@ input {
   float: left;
 
   margin: 0 23px 0 0;
+}
+.profile__img img {
+  max-width: 100%;
+  height: auto;
 }
 .profile__name {
   font-size: 15px;
@@ -1345,6 +1373,59 @@ input {
   color: white;
   background-color: #8e88a3;
 }
+@media (max-width: 984px) {
+  .profile {
+  width: 65%;
+  padding: 0 15px 0 0;
+  }
+  .profile__title {
+
+  }
+  .profile__description {
+  }
+  .profile__img {
+  width: 50%;
+  margin: 0;
+  padding: 0 20px 0 0;
+
+  }
+  .profile__name {
+
+  }
+  .profile__status {
+
+  }
+  .profile__contacts {
+  width: 50%;
+
+  }
+  .profile__contacts-item {
+
+  }
+  .profile__contact-label {
+
+  }
+  .profile__contact-value {
+
+  }
+  .profile__note {
+
+  }
+  .profile__note-message {
+
+  }
+  .link {
+  }
+  .link_color_orange {
+
+  }
+  .link_color_orange:hover {
+
+  }
+  .profile__edit .button {
+
+  }
+}
 /* ========================= END PROFILE ========================= */
 
 /* ========================= START ADDITIONALLY ========================= */
@@ -1383,6 +1464,23 @@ input {
 
   color: #2e304b;
 }
+@media (max-width: 984px) {
+  .additionally {
+  }
+  .additionally__title {
+
+  }
+  .additionally__list {
+  }
+  .additionally__item {
+
+  }
+  .additionally__item-img {
+  }
+  .additionally__item-title {
+
+  }
+}
 /* ========================= END ADDITIONALLY ========================= */
 
 /* ========================= START ADVERTISING ========================= */
@@ -1413,5 +1511,18 @@ input {
 .advertising__item img {
   max-width: 100%;
   height: auto;
+}
+@media (max-width: 984px) {
+  .advertising {
+  }
+  .order {
+
+  }
+  .advertising__item {
+
+  }
+  .advertising__item img {
+
+  }
 }
 /* ========================= END ADVERTISING ========================= */
