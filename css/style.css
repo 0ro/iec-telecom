@@ -76,7 +76,9 @@ input {
 .page__additionally {
 
   width: 70%;
-  margin: 0 -15px 90px;
+  margin: 0 -15px 50px;
+
+  padding: 0 15px;
 }
 .page__advertising {
   float: right;
@@ -108,7 +110,8 @@ input {
 
     display: block;
 
-    width: 100%;
+    width: 65%;
+    padding: 0 15px;
   }
   .page__advertising {
     width: 35%;
@@ -129,6 +132,8 @@ input {
   }
   .page__additionally {
     margin: 0;
+    width: 100%;
+    padding: 0;
   }
   .page__advertising {
     float: none;
@@ -1290,6 +1295,7 @@ input {
 
   width: 70%;
   padding: 0 40px 0 0;
+  margin: 0 0 70px;
 }
 .profile__title {
   font-size: 15px;
@@ -1442,7 +1448,7 @@ input {
   font-weight: 700;
   line-height: 18px;
 
-  margin: 0 15px 25px;
+  margin: 0 0 25px;
   padding: 0 0 25px;
 
   text-transform: uppercase;
@@ -1451,6 +1457,7 @@ input {
   border-bottom: 1px solid #cfcfcf;
 }
 .additionally__list {
+  margin: 0 -15px;
 }
 .additionally__item {
   float: left;
@@ -1472,20 +1479,22 @@ input {
 
   color: #2e304b;
 }
-@media (max-width: 767px) {
-  .additionally {
-  }
-  .additionally__title {
-  }
-  .additionally__list {
-  }
+@media (max-width: 984px) {
   .additionally__item {
     width: 50%;
     height: 200px;
   }
+}
+@media (max-width: 767px) {
+  .additionally {
+  }
+  .additionally__title {
+  margin: 0 0 25px;
+  }
+  .additionally__list {
+  }
   .additionally__item-img {
     width: auto;
-    ;
   }
   .additionally__item-title {
   }
