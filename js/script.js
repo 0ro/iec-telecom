@@ -29,6 +29,11 @@ $(document).ready(function() {
 
   /*QUESTION-ANSWER*/
   $('.question').click(function(event) {
-    $(this).parent().children('.answer').toggle()
+    $(this).parent().children('.answer').toggle();
+  });
+
+  /*ADD-QUESTION*/
+  $('.add-question__button').click(function(event) {
+    $('.add-question__form').toggle('slow');
   });
 });
