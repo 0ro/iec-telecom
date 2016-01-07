@@ -6,6 +6,9 @@
   <title>IEC telecom</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/lightbox.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -239,7 +242,7 @@
       <div class="page__breadcrumb">
         <ul class="breadcrumb clearfix">
           <li class="breadcrumb__item"><a href="/">Главная</a></li>
-          <li class="breadcrumb__item"><a href="#">Личный кабинет</a></li>
+          <li class="breadcrumb__item"><a href="#">Новости</a></li>
         </ul>
         <!-- /.breadcrumb -->
       </div>
@@ -262,178 +265,107 @@
         <!-- /.page__advertising -->
         <div class="page__inner">
           <div class="inner">
-            <h4 class="inner__title">Ваш личный кабинет</h4>
-            <div class="profile">
-              <div class="profile__description clearfix">
-                <div class="profile-data">
-                  <div class="profile-data__item">
-                    <span class="profile-data__label">Фамилия:</span>
-                    <input type="text" class="profile-data__value" value="Медведев">
-                  </div>
-                  <!-- /.profile-data__item -->
-                  <div class="profile-data__item">
-                    <span class="profile-data__label">Имя:</span>
-                    <input type="text" class="profile-data__value" value="Петр">
-                  </div>
-                  <!-- /.profile-data__item -->
-                  <div class="profile-data__item">
-                    <span class="profile-data__label">Отчество:</span>
-                    <input type="text" class="profile-data__value" value="Михайлович">
-                  </div>
-                  <!-- /.profile-data__item -->
-                  <div class="profile-data__item">
-                    <span class="profile-data__label">Никнейм:</span>
-                    <input type="text" class="profile-data__value" value="Терминатор">
-                  </div>
-                  <!-- /.profile-data__item -->
-                  <div class="profile-data__item">
-                    <span class="profile-data__label">Название компании:</span>
-                    <input type="text" class="profile-data__value" value="OMS SHIPPING">
-                  </div>
-                  <!-- /.profile-data__item -->
-                  <div class="profile-data__item">
-                    <span class="profile-data__label">Дата рождения:</span>
-                    <input type="text" class="profile-data__value" value="11.08.1962">
-                  </div>
-                  <!-- /.profile-data__item -->
-                  <div class="profile-data__item">
-                    <span class="profile-data__label">E-mail:</span>
-                    <input type="text" class="profile-data__value" value="it@oms-ship.kz">
-                  </div>
-                  <!-- /.profile-data__item -->
-                  <div class="profile-data__item">
-                    <span class="profile-data__label">Телефон:</span>
-                    <input type="text" class="profile-data__value" value="+7 (7292) 20 00 51">
-                  </div>
-                  <!-- /.profile-data__item -->
-                  <div class="profile-data__item">
-                    <span class="profile-data__label">Fax:</span>
-                    <input type="text" class="profile-data__value" value="+7 (7292) 33 53 34">
-                  </div>
-                  <!-- /.profile-data__item -->
-                  <div class="profile-data__item">
-                    <span class="profile-data__label">Mob.:</span>
-                    <input type="text" class="profile-data__value" value="+7 777 599">
-                  </div>
-                  <!-- /.profile-data__item -->
-                  <div class="profile-data__item">
-                    <span class="profile-data__label">Должность:</span>
-                    <input type="text" class="profile-data__value" value="IT Manager">
-                  </div>
-                  <!-- /.profile-data__item -->
+            <h4 class="inner__title">
+              Новости
+            </h4>
+            <!-- /.inner__title -->
+            <div class="inner__content clearfix">
+              <div class="news">
+                <div class="news__item">
+                  <h5 class="news__title">Правительство прорабатывает меры против Турции в части работ и услуг</h5>
+                  <p class="news__text">
+                    Правительство РФ прорабатывает возможные ограничительные меры в отношении Турции в части работ и услуг, говорится в сообщении пресс-службы правительства РФ в ответ на запрос.
+                    <a href="#" class="news__link-more">Подробнее</a>
+                  </p>
+                  <div class="news__date">10.12.2015</div>
                 </div>
-                <!-- /.profile-data -->
-                <div class="person clearfix">
-                  <div class="person__img">
-                    <img src="img/person-small.png" alt="Петр Михайлович Медведев">
-                  </div>
-                  <div class="person__desc">
-                    <a href="#" class="link link_color_black">Загрузить новое фото</a>
-                    <a href="#" class="link link_color_vinous">Удалить фото</a>
-                  </div>
+                <!-- /.news__item -->
+                <div class="news__item">
+                  <h5 class="news__title">Правительство прорабатывает меры против Турции в части работ и услуг</h5>
+                  <p class="news__text">
+                    Правительство РФ прорабатывает возможные ограничительные меры в отношении Турции в части работ и услуг, говорится в сообщении пресс-службы правительства РФ в ответ на запрос.
+                    <a href="#" class="news__link-more">Подробнее</a>
+                  </p>
+                  <div class="news__date">10.12.2015</div>
                 </div>
-                <!-- /.person -->
+                <!-- /.news__item -->
+                <div class="news__item">
+                  <h5 class="news__title">Правительство прорабатывает меры против Турции в части работ и услуг</h5>
+                  <p class="news__text">
+                    Правительство РФ прорабатывает возможные ограничительные меры в отношении Турции в части работ и услуг, говорится в сообщении пресс-службы правительства РФ в ответ на запрос.
+                    <a href="#" class="news__link-more">Подробнее</a>
+                  </p>
+                  <div class="news__date">10.12.2015</div>
+                </div>
+                <!-- /.news__item -->
+                <div class="news__item">
+                  <h5 class="news__title">Правительство прорабатывает меры против Турции в части работ и услуг</h5>
+                  <p class="news__text">
+                    Правительство РФ прорабатывает возможные ограничительные меры в отношении Турции в части работ и услуг, говорится в сообщении пресс-службы правительства РФ в ответ на запрос.
+                    <a href="#" class="news__link-more">Подробнее</a>
+                  </p>
+                  <div class="news__date">10.12.2015</div>
+                </div>
+                <!-- /.news__item -->
+                <div class="news__item">
+                  <h5 class="news__title">Правительство прорабатывает меры против Турции в части работ и услуг</h5>
+                  <p class="news__text">
+                    Правительство РФ прорабатывает возможные ограничительные меры в отношении Турции в части работ и услуг, говорится в сообщении пресс-службы правительства РФ в ответ на запрос.
+                    <a href="#" class="news__link-more">Подробнее</a>
+                  </p>
+                  <div class="news__date">10.12.2015</div>
+                </div>
+                <!-- /.news__item -->
+                <div class="news__item">
+                  <h5 class="news__title">Правительство прорабатывает меры против Турции в части работ и услуг</h5>
+                  <p class="news__text">
+                    Правительство РФ прорабатывает возможные ограничительные меры в отношении Турции в части работ и услуг, говорится в сообщении пресс-службы правительства РФ в ответ на запрос.
+                    <a href="#" class="news__link-more">Подробнее</a>
+                  </p>
+                  <div class="news__date">10.12.2015</div>
+                </div>
+                <!-- /.news__item -->
               </div>
-              <!-- /.profile__description -->
-              <div class="profile__note">
-                <div class="profile__note-message">Сейчас ваш профиль виден только вам</div>
-                <a href="#" class="link link_color_orange">Открыть профиль</a>
-              </div>
-              <!-- /.profile__note -->
-              <div class="profile__edit">
-                <button class="button">Сохранить</button>
-              </div>
-              <!-- /.profile__edit -->
+              <!-- /.news -->
+              <ul class="pagination clearfix">
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link pagination__link_active">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">3</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">4</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">5</a>
+                </li>
+                <li class="pagination__item">
+                  ...
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">36</a>
+                </li>
+              </ul>
+              <!-- /.pagination -->
             </div>
-            <!-- /.profile -->
+            <!-- /.inner__content -->
           </div>
           <!-- /.inner -->
         </div>
         <!-- /.page__inner -->
-        <div class="page__additionally clearfix">
-          <div class="additionally">
-            <h4 class="additionally__title">Вам будет интересно</h4>
-            <div class="additionally__list clearfix">
-              <div class="additionally__item">
-                <img src="img/equipment.png" alt="Дополнительные проценты на продажу старого оборудования" class="additionally__item-img">
-                <div class="additionally__item-title">Дополнительные проценты на продажу старого оборудования</div>
-              </div>
-              <div class="additionally__item">
-                <img src="img/technology.png" alt="Новая технология передачи данных" class="additionally__item-img">
-                <div class="additionally__item-title">Новая технология передачи данных</div>
-              </div>
-              <div class="additionally__item">
-                <img src="img/option.png" alt="Настройка нового оборудования для связи" class="additionally__item-img">
-                <div class="additionally__item-title">Настройка нового оборудования для связи</div>
-              </div>
-            </div>
-            <!-- /.additionally__list -->
-          </div>
-          <!-- /.additionally -->
-        </div>
-        <!-- /.page__additionally -->
       </div>
       <!-- /.page__content -->
     </div>
     <!-- /.page__main -->
-    <div class="page__footer">
-      <footer class="footer clearfix">
-        <div class="footer__top clearfix">
-          <div class="footer__description">
-            <div class="social clearfix">
-              <div class="social__item">
-                <a href="#" class="social__link social__link_in"></a>
-              </div>
-              <!-- /.social__item -->
-              <div class="social__item">
-                <a href="#" class="social__link social__link_fb"></a>
-              </div>
-              <!-- /.social__item -->
-              <div class="social__item">
-                <a href="#" class="social__link social__link_vk"></a>
-              </div>
-              <!-- /.social__item -->
-              <div class="social__item">
-                <a href="#" class="social__link social__link_ok"></a>
-              </div>
-              <!-- /.social__item -->
-            </div>
-            <!-- /.social -->
-          </div>
-          <!-- /.footer__description -->
-          <div class="footer__contacts">
-            <div class="contacts__title">
-              IEC TELECOM<br> Satellite Communications & Solutions
-            </div>
-          </div>
-          <!-- /.footer__contacts -->
-        </div>
-        <!-- /.footer__top -->
-        <div class="footer__bottom clearfix">
-          <div class="footer__contacts">
-            <div class="contacts__value">
-              <div class="contacts__phone">+7 (495) 363-11-12</div>
-              <div class="contacts__email">info-ea@iec-telecom.com</div>
-            </div>
-          </div>
-          <!-- /.footer__contacts -->
-          <div class="footer__description">
-            <div class="license">
-              <br>
-              Name of project &copy; 2015
-            </div>
-            <!-- /.license -->
-          </div>
-          <!-- /.footer__description -->
-        </div>
-        <!-- /.footer__bottom -->
-      </footer>
-      <!-- /.footer -->
-    </div>
-    <!-- /.page__footer -->
   </div>
   <!-- /.page -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/lightbox.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
