@@ -1400,7 +1400,6 @@ input {
 }
 @media (max-width: 984px) {
   .profile {
-    width: 65%;
     margin: 0 0 70px;
     padding: 0 15px 0 0;
   }
@@ -1611,12 +1610,21 @@ input {
 }
 /* ========================= END PROFILE-DATA ========================= */
 
+/* ////////////////////////////////////////////////////////////////
+
+                            PAGE DECISION_PAGE
+
+//////////////////////////////////////////////////////////////// */
+
 /* ========================= START INNER ========================= */
-.inner {
+.page__inner {
   float: right;
 
   width: 70%;
   padding: 0 40px 0 0;
+  ;;;;;;
+}
+.inner {
 }
 .inner__title {
   font-size: 15px;
@@ -1632,8 +1640,6 @@ input {
   border-bottom: 1px solid #cfcfcf;
 }
 .inner__content {
-  display: flex;
-
   width: 100%;
   padding: 0 0 84px;
 
@@ -1644,6 +1650,8 @@ input {
 
   width: 50%;
   padding: 0 40px 0 0;
+
+  order: 1;
 }
 .slider-for {
   overflow: hidden;
@@ -1657,7 +1665,11 @@ input {
   width: 100%;
 }
 .inner__text {
+  float: right;
+
   width: 50%;
+
+  order: 2;
 }
 .inner__text p {
   font-family: CaviarDreams;
@@ -1669,6 +1681,35 @@ input {
 
   color: #2e304b;
 }
+@media (max-width: 984px) {
+  .page__inner {
+    width: 65%;
+  }
+  .inner__content {
+    display: flex;
+
+    flex-flow: column wrap;
+  }
+  .slider {
+    width: 301px;
+  }
+  .inner__text {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .page__inner {
+    float: none;
+
+    width: 100%;
+    padding: 0;
+  }
+  .slider {
+    width: 100%;
+    padding: 0;
+  }
+}
+
 /* ========================= END INNER ========================= */
 
 /*custom slick*/
@@ -1679,21 +1720,26 @@ input {
   margin: 0 -8px;
 }
 .slider-nav img {
-  width: 90px !important;
-  height: 90px !important;
   margin: 0 0 0 7px;
 }
-
+.slick-slide img {
+  width: 100%;
+}
 .video-block {
   width: 100%;
   height: 169px;
 
-  background: url(../img/video-img.png) no-repeat;;
+  background: url(../img/video-img.png) no-repeat;
+
+  order: 3;
 }
 
 /* ========================= START DOWNLOAD-DOC ========================= */
 .download-doc {
+  width: 50%;
   margin: 50px 0 0;
+
+  order: 4;
 }
 .download-doc__item {
   float: left;
@@ -1720,6 +1766,11 @@ input {
 }
 .download-doc__title:hover {
   color: #f38b00;
+}
+@media (max-width: 984px) {
+  .download-doc {
+    width: 100%;
+  }
 }
 /* ========================= END DOWNLOAD-DOC ========================= */
 
@@ -1767,18 +1818,19 @@ input {
 }
 .add-question__desc {
   margin: 0 0 20px;
-
 }
 .add-question__title {
   font-size: 15px;
   font-weight: 700;
   line-height: 34px;
 
+  float: left;
+
+  margin: 0 18px 0 0;
+
   text-transform: uppercase;
 
   color: #2e304b;
-  float: left;
-  margin: 0 18px 0 0;
 }
 .button {
 }
@@ -1787,11 +1839,12 @@ input {
   font-weight: 700;
   line-height: 18px;
 
+  float: left;
+
   padding: 8px 15px;
 
   color: white;
   background-color: #f38b00;
-  float: left;
 }
 .add-question__button:hover {
   background-color: #fd9812;
@@ -1802,12 +1855,13 @@ input {
 .add-question__form {
   position: relative;
 
+  display: none;
+
   width: 100%;
+  margin: 0 0 20px;
   padding: 20px;
 
   background-color: #f3f3f3;
-  margin: 0 0 20px;
-  display: none;
 }
 .add-question__form:before {
   position: absolute;
@@ -1855,9 +1909,9 @@ input {
 .question-input__input {
   width: 100%;
   height: 30px;
+  padding: 5px;
 
   border: 0;
-  padding: 5px;
 }
 .question-textarea {
   width: 100%;
@@ -1866,20 +1920,21 @@ input {
   width: 100%;
   max-width: 100%;
   height: 98px;
+  padding: 5px;
 
   border: 0;
-  padding: 5px;
 }
 .question-button {
   font-size: 15px;
   font-weight: 700;
   line-height: 18px;
 
+  float: right;
+
   padding: 8px 15px;
 
   color: white;
   background-color: #f38b00;
-  float: right;
 }
 .add-question__form-control_textarea {
   width: 100%;
@@ -1895,5 +1950,12 @@ input {
 }
 .question-button:active {
   background-color: #de7f00;
+}
+@media (max-width: 767px) {
+  .add-question__form-control {
+    float: none;
+
+    width: 100%;
+  }
 }
 /* ========================= END ADD-QUESTION ========================= */
