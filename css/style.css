@@ -2002,9 +2002,11 @@ input {
   color: #2e304b;
 }
 .news__title {
-  text-transform: uppercase;
   font-size: 15px;
+
   margin: 20px 0;
+
+  text-transform: uppercase;
 }
 .news__text {
   margin: 0 0 10px;
@@ -2019,10 +2021,11 @@ input {
   color: #dcdce6;
 }
 .news__date {
-  color: #dcdce6;
   font-size: 15px;
   font-weight: 700;
   line-height: 18px;
+
+  color: #dcdce6;
 }
 /* ========================= END NEWS ========================= */
 
@@ -2030,31 +2033,32 @@ input {
 .pagination {
   margin: 40px -5px 0;
   padding: 0;
+
   list-style: none;
-  
 }
 .pagination__item {
   float: left;
-  
 }
 .pagination__link {
-  color: #2e304b;
   font-size: 15px;
   font-weight: 700;
   line-height: 24px;
-  text-decoration: none;
+
   display: block;
+
   width: 24px;
   height: 24px;
+  margin: 0 5px;
+
   text-align: center;
-  margin: 0 5px;;
-  
+  text-decoration: none;
+
+  color: #2e304b;
 }
 .pagination__link:hover {
   text-decoration: underline;
 }
 .pagination__link_active {
   background-color: #f3f3f3;
-  
 }
 /* ========================= END PAGINATION ========================= */
