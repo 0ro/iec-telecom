@@ -88,7 +88,6 @@ input {
     padding: 0 20px;
   }
   .page__banner {
-    margin: 0 -20px;
   }
   .page__footer {
     margin: 0 -20px;
@@ -781,6 +780,15 @@ input {
 }
 .banner__img {
   position: relative;
+
+  width: 100%;
+  height: 107px;
+
+  background-image: url(../img/banner_profile.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover;
 }
 .banner__img img {
   max-width: 100%;
