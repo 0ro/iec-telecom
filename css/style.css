@@ -2113,6 +2113,14 @@ input {
   color: #fff;
   background-color: #8d87a3;
 }
+.info__button:hover {
+  outline: none;
+  background: #80779e;
+}
+.info_img_false .info__content {
+  width: 100%;
+  padding: 0;
+}
 @media (max-width: 984px) {
   .info__img {
     width: 30%;
@@ -2134,5 +2142,15 @@ input {
     margin: 20px 0 0;
     padding: 0;
   }
+  .info_img_false .info__button {
+  float: left;
+  }
 }
 /* ========================= END INFO ========================= */
+
+
+/* ////////////////////////////////////////////////////////////////
+
+                            PAGE TRAINING_LISTING
+
+//////////////////////////////////////////////////////////////// */
