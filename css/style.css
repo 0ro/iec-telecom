@@ -70,14 +70,12 @@ input {
 }
 .page__profile {
   width: 100%;
-  padding: 0;
   margin-bottom: 10px;
+  padding: 0;
 }
 .page__additionally {
-
   width: 70%;
   margin: 0 -15px 50px;
-
   padding: 0 15px;
 }
 .page__advertising {
@@ -131,8 +129,8 @@ input {
   .page__profile {
   }
   .page__additionally {
-    margin: 0;
     width: 100%;
+    margin: 0;
     padding: 0;
   }
   .page__advertising {
@@ -1285,17 +1283,14 @@ input {
 
   float: left;
 
-  color: #2e304b;;
+  color: #2e304b;
 }
 /* ========================= END PERSON ========================= */
 
 /* ========================= START PROFILE ========================= */
 .profile {
-  float: right;
-
-  width: 70%;
-  padding: 0 40px 0 0;
   margin: 0 0 230px;
+  padding: 0 40px 0 0;
 }
 .profile__title {
   font-size: 15px;
@@ -1406,8 +1401,8 @@ input {
 @media (max-width: 984px) {
   .profile {
     width: 65%;
-    padding: 0 15px 0 0;
     margin: 0 0 70px;
+    padding: 0 15px 0 0;
   }
   .profile__img {
     width: 50%;
@@ -1490,7 +1485,7 @@ input {
   .additionally {
   }
   .additionally__title {
-  margin: 0 0 25px;
+    margin: 0 0 25px;
   }
   .additionally__list {
   }
@@ -1615,3 +1610,148 @@ input {
   background-color: #f6f6f8;
 }
 /* ========================= END PROFILE-DATA ========================= */
+
+/* ========================= START INNER ========================= */
+.inner {
+  float: right;
+
+  width: 70%;
+  padding: 0 40px 0 0;
+}
+.inner__title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+
+  margin: 0 0 25px;
+  padding: 0 0 25px;
+
+  text-transform: uppercase;
+
+  color: #2e304b;
+  border-bottom: 1px solid #cfcfcf;
+}
+.inner__content {
+  display: flex;
+
+  width: 100%;
+  padding: 0 0 84px;
+
+  flex-flow: row wrap;
+}
+.slider {
+  overflow: hidden;
+
+  width: 50%;
+  padding: 0 40px 0 0;
+}
+.slider-for {
+  overflow: hidden;
+
+  width: 100%;
+  margin: 0 0 7px;
+}
+.slider-nav {
+  overflow: hidden;
+
+  width: 100%;
+}
+.inner__text {
+  width: 50%;
+}
+.inner__text p {
+  font-family: CaviarDreams;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+
+  margin: 0 0 10px;
+
+  color: #2e304b;
+}
+/* ========================= END INNER ========================= */
+
+/*custom slick*/
+.slick-dots {
+  display: none;
+}
+.slick-list {
+  margin: 0 -8px;
+}
+.slider-nav img {
+  width: 90px !important;
+  height: 90px !important;
+  margin: 0 0 0 7px;
+}
+
+.video-block {
+  width: 100%;
+  height: 169px;
+
+  background: #ccc;
+}
+
+/* ========================= START DOWNLOAD-DOC ========================= */
+.download-doc {
+  margin: 50px 0 0;
+}
+.download-doc__item {
+  float: left;
+
+  width: 100px;
+  margin: 0 23px 0 0;
+}
+.download-doc__img {
+  display: block;
+
+  width: 57px;
+  height: 72px;
+
+  background: url(../img/doc-download.png) no-repeat;
+}
+.download-doc__title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+
+  text-decoration: underline;
+
+  color: #8e88a3;
+}
+.download-doc__title:hover {
+  color: #f38b00;
+}
+/* ========================= END DOWNLOAD-DOC ========================= */
+
+/* ========================= START QUESTION-ANSWER ========================= */
+.question-answer {
+}
+.question-answer__item {
+  margin: 0 0 20px;
+}
+.question {
+  color: #8e88a3;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  border-bottom: 2px dotted #dcdce6;
+  display: inline-block;
+  cursor: pointer;
+}
+.question:hover {
+  color: #f38b00;
+  border-bottom: 2px dotted #f38b00;
+}
+.answer {
+  color: #2e304b;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 17px;
+  display: none;
+}
+.answer_show .answer {
+  display: block;
+}
+/* ========================= END QUESTION-ANSWER ========================= */
