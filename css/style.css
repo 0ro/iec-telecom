@@ -1688,7 +1688,7 @@ input {
   width: 100%;
   height: 169px;
 
-  background: #ccc;
+  background: url(../img/video-img.png) no-repeat;;
 }
 
 /* ========================= START DOWNLOAD-DOC ========================= */
