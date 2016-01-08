@@ -782,6 +782,7 @@ input {
   position: relative;
 
   width: 100%;
+
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -1229,6 +1230,7 @@ input {
 .page__banner_profile .banner__img {
   height: 100%;
   min-height: 107px;
+
   background-image: url(../img/banner_profile.png);
 }
 .page__banner_profile .banner__content {
@@ -2141,14 +2143,106 @@ input {
     padding: 0;
   }
   .info_img_false .info__button {
-  float: left;
+    float: left;
   }
 }
 /* ========================= END INFO ========================= */
 
+/* ========================= START ADDRESS ========================= */
+.description {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 21px;
 
-/* ////////////////////////////////////////////////////////////////
+  color: #2e304b;
+  margin: 0 0 70px;
+}
+.description a {
+  color: #2e304b;
+}
+@media (max-width: 984px) {
+  .description {
+    margin: 0 0 50px;
+  }
+}
+.address {
+}
+.address__title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
 
-                            PAGE TRAINING_LISTING
+  text-transform: uppercase;
 
-//////////////////////////////////////////////////////////////// */
+  color: #2e304b;
+}
+.address__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+.address__item {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 23px;
+
+  padding: 0 0 0 10px;
+
+  color: #2e304b;
+  background: url(../img/list-style.png) no-repeat 0 11px;;
+}
+.address__item-address {
+  display: block;
+}
+.address__item-phone {
+  display: block;
+}
+.address__item-email {
+  display: block;
+
+  color: #2e304b;
+}
+.address__item-site {
+  display: block;
+
+  color: #2e304b;
+}
+/* ========================= END ADDRESS ========================= */
+
+/* ========================= START DIRECTORS ========================= */
+.directors {
+  margin: 86px 0 0;
+}
+.directors__item {
+  font-size: 15px;
+  font-weight: 700;
+
+  color: #2e304b;
+  margin: 0 0 45px;
+}
+.directors__img {
+  float: left;
+  margin: 0 35px 0 0;
+}
+.directors__desc {
+  float: left;
+}
+.directors__name {
+  display: block;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+.directors__position {
+  display: block;
+}
+.directors__contacts {
+}
+.directors__contacts-email {
+  color: inherit;
+  display: block;
+}
+.directors__contacts-phone {
+  display: block;
+}
+/* ========================= END DIRECTORS ========================= */
