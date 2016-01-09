@@ -2,11 +2,15 @@ $(document).ready(function() {
   /*RESP MENU*/
   $('.sign').click(function(event) {
     $('.nav__menu').hide();
-    $('.header__form .form').toggle();
+    $('.header__form form').toggle();
   });
   $('.nav__toggle').click(function(event) {
-    $('.header__form .form').hide();
+    $('.header__form form').hide();
+    $('.dropdown-menu').hide();
     $('.nav__menu').toggle();
+  });
+  $('span.menu__link').parent().click(function(event) {
+    $('.dropdown-menu').toggle();
   });
 
   /*SLICK*/
@@ -14,7 +18,7 @@ $(document).ready(function() {
     $('.slider-for').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
-      arrows: false,
+      arrows: true,
       fade: true,
       asNavFor: '.slider-nav'
     });
@@ -22,7 +26,7 @@ $(document).ready(function() {
       slidesToShow: 3,
       slidesToScroll: 1,
       asNavFor: '.slider-for',
-      dots: true,
+      dots: false,
       centerMode: true,
       centerPadding:'-7px',
       focusOnSelect: true

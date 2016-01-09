@@ -5,7 +5,8 @@ var gulp = require('gulp'),
 gulp.task('connect', function() {
   connect.server({
     root: [__dirname],
-    livereload: true
+    livereload: true,
+    port: 8000
   });
 });
 
