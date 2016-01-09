@@ -1318,7 +1318,7 @@ input {
 /* ========================= START PROFILE ========================= */
 .profile {
   margin: 0 0 230px;
-  padding: 0 40px 0 0;
+  padding: 0;
 }
 .profile__title {
   font-size: 15px;
