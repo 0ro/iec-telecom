@@ -50,8 +50,8 @@ input {
 .page__main {
   max-width: 984px;
   min-height: 100%;
-  margin: 0 auto -164px;
-  padding: 0 0 164px;
+  margin: 0 auto -137px;
+  padding: 0 0 137px;
 }
 .page__text {
   max-width: 984px;
@@ -59,9 +59,10 @@ input {
   padding: 45px 0 0;
 }
 .page__footer {
-  min-height: 164px;
+  min-height: 137px;
+  padding: 0 0 30px;
 
-  background-color: #f3f3f3;;
+  background-color: #f3f3f3;
 }
 .page__content {
   position: relative;
@@ -155,6 +156,8 @@ input {
 .lang {
   display: block;
 
+  width: 86px;
+  height: 29px;
   margin: 0;
   padding: 4px 0 0 20px;
 
@@ -162,17 +165,17 @@ input {
 
   background-image: url(../img/lang.png);
   background-repeat: no-repeat;
-  width: 86px;
-  height: 29px;
 }
 .lang__item {
   float: left;
+
   padding: 0 12px 0 0;
 }
 .lang__link {
-  color: #8d87a3;
   font-size: 14px;
   font-weight: 700;
+
+  color: #8d87a3;
 }
 .lang__link_active {
   text-decoration: none;
@@ -1129,51 +1132,19 @@ input {
 
 /* ========================= START FOOTER ========================= */
 .footer {
-  position: relative;
-
   max-width: 984px;
   margin: 0 auto;
-  padding: 30px 0;
 }
-.footer__contacts {
-  float: left;
-
-  width: 40%;
+.footer .nav {
+  height: auto;
 }
-.contacts {
-}
-.contacts__title {
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 18px;
-
-  margin: 0 0 30px;
-
-  color: #2e304b;;
-}
-.contacts__value {
-  font-size: 15px;
-  font-weight: 700;
-
-  color: #2e304b;
-}
-.contacts__phone {
-}
-.contacts__email {
-}
-.footer__description {
-  float: left;
-
-  width: 60%;
-}
-.social {
-  width: 223px;
-  margin: 0 -23px 0 0;
+.footer .menu__item {
+  height: 30px;
 }
 .social__item {
   float: left;
 
-  padding: 0 23px 0 0;
+  margin: 0 23px 0 0;
 }
 .social__link {
   display: block;
@@ -1184,97 +1155,60 @@ input {
   background-image: url(../img/social-icons.png);
   background-repeat: no-repeat;
 }
-.social__link_in {
-  background-position: 0 0;
-}
 .social__link_fb {
-  background-position: -32px 0;
+  background-position-x: 0;
 }
-.social__link_vk {
-  background-position: -64px 0;
+.social__link_yt {
+  background-position-x: -32px;
 }
-.social__link_ok {
-  background-position: -96px 0;
+.social__link_tw {
+  background-position-x: -64px;
 }
-.social__link_in:hover {
-  background-position: 0 -32px;
+.social__link_g {
+  background-position-x: -96px;
 }
-.social__link_fb:hover {
-  background-position: -32px -32px;
+.social__link_in {
+  background-position-x: -128px;
 }
-.social__link_vk:hover {
-  background-position: -64px -32px;
+.social__link:hover {
+  background-position-y: -32px;
 }
-.social__link_ok:hover {
-  background-position: -96px -32px;
-}
-.license {
-  font-size: 15px;
-  font-weight: 700;
-
-  color: #2e304b;
-}
-.footer__top .footer__description,
-.footer__top .footer__contacts {
-  float: right;
-}
-/* start footer tablet */
 @media (max-width: 984px) {
   .footer {
-    padding: 30px 20px;
+    padding: 0 20px;
   }
 }
-/* start footer tablet */
-
-/* start footer phone 480 */
 @media (max-width: 767px) {
-  .footer__contacts {
-    width: 50%;
+  .footer .nav {
+    height: auto;
+    padding: 28px 0;
   }
-  .footer__description {
-    width: 50%;
-  }
-  .contacts__title {
-    margin: 0 0 15px;
-  }
-  .license {
-    float: right;
+  .footer .nav__menu {
+    position: static;
+    right: 0;
 
-    text-align: right;
-  }
-  .social {
-    float: right;
+    display: block;
 
-    margin: 0 -20px 0 0;
+    width: 100%;
+  }
+  .footer .menu {
+    margin: 0 -30px 0 0;
+    padding: 0;
+
+    list-style: none;
+
+    background: none;
+  }
+  .footer .menu__item {
+    float: left;
   }
 }
-/* end footer phone 480 */
-
-/* start footer phone 320 */
 @media (max-width: 479px) {
-  .footer__contacts {
+  .footer .nav {
     width: 100%;
-  }
-  .footer__description {
-    width: 100%;
-  }
-  .contacts__title {
-  }
-  .license {
-    float: none;
-
-    text-align: left;
-  }
-  .social {
-    float: none;
-
-    margin: 0 auto 30px;
-  }
-  .social__item {
-    padding: 0 11px 0;
   }
 }
-/* end footer phone 320 */
+
 /* ========================= END FOOTER ========================= */
 
 /* ////////////////////////////////////////////////////////////////
@@ -1433,11 +1367,13 @@ input {
   color: #2e304b;
 }
 .profile__message {
-font-size: 15px;
+  font-size: 15px;
   font-weight: 700;
   line-height: 18px;
+
+  margin: 0 0 25px;
+
   color: #8e88a3;
-margin: 0 0 25px;
 }
 .link {
 }
@@ -1681,6 +1617,7 @@ margin: 0 0 25px;
   display: table-cell;
 
   width: 30%;
+
   vertical-align: middle;
 }
 .profile-data__value {
@@ -1697,8 +1634,8 @@ margin: 0 0 25px;
   .profile-data__label {
     display: block;
 
-    margin: 0 0 8px;
     width: 100%;
+    margin: 0 0 8px;
   }
   .profile-data__value {
     display: block;
